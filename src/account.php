@@ -76,6 +76,27 @@ class account
           $res[$r]=$v;
           
         }
-        return array_filter($res);
+        
+         $res=array_filter($res);
+
+         if($res[0]==30)
+         {
+            $response['message']="Geçersiz kullanıcı adı , şifre veya kullanıcınızın API erişim izninin olmadığını gösterir.Ayrıca eğer API erişiminizde IP sınırlaması yaptıysanız ve sınırladığınız ip dışında gönderim sağlıyorsanız 30 hata kodunu alırsınız. API erişim izninizi veya IP sınırlamanızı , web arayüzümüzden; sağ üst köşede bulunan ayarlar> API işlemleri menüsunden kontrol edebilirsiniz.";
+            $response['code']=$res[0];
+         }
+         else if($res[0]==40)
+         {
+            $response['message']="Arama kriterlerinize göre listelenecek kayıt olmadığını ifade eder.";
+            $response['code']=$res[0];
+         }
+         else if($res[0]==70)
+         {
+            $response['message']="Hatalı sorgulama. Gönderdiğiniz parametrelerden birisi hatalı veya zorunlu alanlardan birinin eksik olduğunu ifade eder.";
+            $response['code']=$res[0];
+         }
+         else{
+            $response=$res;
+         }
+         return $response;
     }
 }
