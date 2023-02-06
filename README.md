@@ -46,3 +46,15 @@ Aboneliğinizde bulunan Paket - Kampanya bilgilerine bu servisten ulaşabilirsin
             print_r($sonuc);
         echo '<pre>';
 ``` 
+
+#### Başarılı Sorgulama
+
+```
+Array
+(
+    [durum] => Başarılı sorgulama
+    [cüzdan] => 34,020
+    [code] => 00
+)
+
+```
