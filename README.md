@@ -49,7 +49,7 @@ Array
 ```
 Array
 (
-   [durum] => Geçersiz kullanıcı adı , şifre veya kullanıcınızın API erişim izninin olmadığını gösterir.Ayrıca eğer API erişiminizde IP sınırlaması  
+   [durum] => Geçersiz kullanıcı adı , şifre veya kullanıcınızın API erişim izninin olmadığını gösterir.  Ayrıca eğer API erişiminizde IP sınırlaması
    yaptıysanız ve sınırladığınız ip dışında gönderim sağlıyorsanız 30 hata kodunu alırsınız. API erişim izninizi veya IP sınırlamanızı , web arayüzümüzden;  sağ üst köşede bulunan ayarlar> API işlemleri menüsunden kontrol edebilirsiniz.
     [code] => 30
 )
