@@ -1,7 +1,18 @@
 
-# Netgsm Account Laravel Paketi
+# Laravel Netgsm Account Entegrasyonu
 
 Netgsm kredi ve paket sorgulama için kulanılan laravel paketidir.
+
+# İletişim & Destek
+
+ Netgsm API Servisi ile alakalı tüm sorularınızı ve önerilerinizi teknikdestek@netgsm.com.tr adresine iletebilirsiniz.
+
+
+# Doküman 
+
+ API Servisi için hazırlanmış kapsamlı dokümana ve farklı yazılım dillerinde örnek amaçlı hazırlanmış örnek kodlamalara 
+ [https://www.netgsm.com.tr/dokuman](https://www.netgsm.com.tr/dokuman) adresinden ulaşabilirsiniz.
+
 
 ### Supported Laravel Versions
 
@@ -13,7 +24,7 @@ PHP 7.2.5 ve üzeri
 
 ### Kurulum
 
-composer require netgsm/account
+<b>composer require netgsm/account</b>
 
 .env  dosyası içerisinde NETGSM ABONELİK bilgileriniz tanımlanması zorunludur.  
 
