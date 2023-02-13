@@ -1,7 +1,7 @@
 
-# Laravel Netgsm Account Entegrasyonu
+# Laravel ve Symfony Netgsm Account Entegrasyonu
 
-Netgsm kredi ve paket sorgulama için kulanılan laravel paketidir.
+Netgsm kredi ve paket sorgulama için kulanılan composer paketidir.
 
 # İletişim & Destek
 
