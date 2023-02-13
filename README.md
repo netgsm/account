@@ -40,10 +40,8 @@ Aboneliğinizde bulunan Kredi bilgilerine bu servisten ulaşabilirsiniz.
         use Netgsm\Account\account;
 	$kredi=new account;
        	$sonuc=$kredi->kredisorgu();
-      	echo '<pre>';
-            print_r($sonuc);
-        echo '<pre>';
-	die;
+      	dd($sonuc);
+        die;
 ``` 
 #### Başarılı Sorgulama
 
@@ -78,10 +76,8 @@ Aboneliğinizde bulunan Paket - Kampanya bilgilerine bu servisten ulaşabilirsin
         use Netgsm\Account\account;
 	$kredi=new account;
      	$sonuc=$kredi->paketsorgu();
-       	echo '<pre>';
-            print_r($sonuc);
-        echo '<pre>';
-	die;
+       	dd($sonuc);
+        die;
 ``` 
 
 #### Başarılı Sorgulama
