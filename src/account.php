@@ -11,8 +11,21 @@ class account
     private $password;
     public function __construct()
     {
-        $this->username=$_ENV['NETGSM_USERCODE'];
-        $this->password=$_ENV['NETGSM_PASSWORD'];
+        if(isset($_ENV['NETGSM_USERCODE']))
+        {
+            $this->username=$_ENV['NETGSM_USERCODE'];
+        }
+        else{
+            $this->username=null;
+        }
+        if(isset($_ENV['NETGSM_PASSWORD']))
+        {
+            $this->password=$_ENV['NETGSM_PASSWORD'];
+        }
+        else{
+            $this->password=null;
+        }
+        
     }
     public function kredisorgu():array
     {
