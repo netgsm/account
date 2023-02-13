@@ -7,14 +7,22 @@ namespace Netgsm\Account;
 class account
 {   
    
-    
+    private $username;
+    private $password;
+    public function __construct()
+    {
+        $this->username=$_ENV['NETGSM_USERCODE'];
+        $this->password=$_ENV['NETGSM_PASSWORD'];
+    }
     public function kredisorgu():array
     {
+
+        
         $xmlData='<?xml version="1.0"?>
         <mainbody>
             <header>		
-                <usercode>'.env("NETGSM_USERCODE").'</usercode>
-                <password>'.env("NETGSM_PASSWORD").'</password>
+                <usercode>'.$this->username.'</usercode>
+                <password>'.$this->password.'</password>
                 <stip>2</stip>      
                 </header>		
         </mainbody>';
@@ -54,8 +62,8 @@ class account
         $xmlData='<?xml version="1.0"?>
         <mainbody>
             <header>		
-                <usercode>'.env("NETGSM_USERCODE").'</usercode>
-                <password>'.env("NETGSM_PASSWORD").'</password>
+            <usercode>'.$this->username.'</usercode>
+            <password>'.$this->password.'</password>
                 <stip>1</stip>      
                 </header>		
         </mainbody>';
