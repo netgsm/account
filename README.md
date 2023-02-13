@@ -43,6 +43,7 @@ Aboneliğinizde bulunan Kredi bilgilerine bu servisten ulaşabilirsiniz.
       	echo '<pre>';
             print_r($sonuc);
         echo '<pre>';
+	die;
 ``` 
 #### Başarılı Sorgulama
 
@@ -80,6 +81,7 @@ Aboneliğinizde bulunan Paket - Kampanya bilgilerine bu servisten ulaşabilirsin
        	echo '<pre>';
             print_r($sonuc);
         echo '<pre>';
+	die;
 ``` 
 
 #### Başarılı Sorgulama
