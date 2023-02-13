@@ -12,19 +12,19 @@ class account
     public function __construct()
     {
         if(isset($_ENV['NETGSM_USERCODE']))
-        {
-            $this->username=$_ENV['NETGSM_USERCODE'];
-        }
-        else{
-            $this->username=null;
-        }
-        if(isset($_ENV['NETGSM_PASSWORD']))
-        {
-            $this->password=$_ENV['NETGSM_PASSWORD'];
-        }
-        else{
-            $this->password=null;
-        }
+      {
+          $this->username=$_ENV['NETGSM_USERCODE'];
+      }
+      else{
+          $this->username='x';
+      }
+      if(isset($_ENV['NETGSM_PASSWORD']))
+      {
+          $this->password=$_ENV['NETGSM_PASSWORD'];
+      }
+      else{
+          $this->password='x';
+      }
         
     }
     public function kredisorgu():array
