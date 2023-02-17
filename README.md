@@ -44,7 +44,7 @@ PHP 7.2.5 ve üzeri
 
 Aboneliğinizde bulunan Kredi bilgilerine bu servisten ulaşabilirsiniz.  
 
-```
+```php
         use Netgsm\Account\account;
 	$kredi=new account;
        	$sonuc=$kredi->kredisorgu();
@@ -53,7 +53,7 @@ Aboneliğinizde bulunan Kredi bilgilerine bu servisten ulaşabilirsiniz.
 ``` 
 #### Başarılı Sorgulama
 
-```
+```php
 Array
 (
     [durum] => Başarılı sorgulama
@@ -64,7 +64,7 @@ Array
 ```
 #### Başarısız Sorgulama
 
-```
+```php
 Array
 (
    [durum] => Geçersiz kullanıcı adı , şifre veya kullanıcınızın API erişim izninin olmadığını gösterir.  
@@ -80,7 +80,7 @@ Array
 
 Aboneliğinizde bulunan Paket - Kampanya bilgilerine bu servisten ulaşabilirsiniz.  
 
-```
+```phpphp
         use Netgsm\Account\account;
 	$kredi=new account;
      	$sonuc=$kredi->paketsorgu();
@@ -90,7 +90,7 @@ Aboneliğinizde bulunan Paket - Kampanya bilgilerine bu servisten ulaşabilirsin
 
 #### Başarılı Sorgulama
 
-```
+```php
 Array
 (
     [0] => 215 | Adet | Sms Hizmeti - Giden
@@ -100,7 +100,7 @@ Array
 
 #### Başarısız Sorgulama
 
-```
+```php
 Array
 (
    [durum] => Geçersiz kullanıcı adı , şifre veya kullanıcınızın API erişim izninin olmadığını gösterir.  
