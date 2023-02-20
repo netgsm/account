@@ -7,7 +7,7 @@ Netgsm kredi ve paket sorgulama için kulanılan composer paketidir.
 - [İletişim & Destek](#i̇letişim--destek)
 - [Supported](#Supported-Laravel-Versions)
 - [Kurulum](#kurulum)
-- [Kredi Sorgulama](#kredi-sorgulama)
+- [Kredi Sorgulama](#kredi̇-sorgulama)
 - [Paket Sorgulama](#paket-sorgulama)
 # İletişim & Destek
 
