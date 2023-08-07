@@ -98,11 +98,11 @@ Aboneliğinizde bulunan Paket - Kampanya bilgilerine bu servisten ulaşabilirsin
 #### Başarılı Sorgulama
 
 ```php
-array:1 [
+array:1 [▼
   0 => array:3 [▼
-    "miktar" => "500 "
-    "birim" => " Adet "
-    "paketismi" => " SMS"
+    "miktar" => "500"
+    "birim" => "Adet"
+    "paketismi" => "SMS"
   ]
 ]
 
