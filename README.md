@@ -98,10 +98,13 @@ Aboneliğinizde bulunan Paket - Kampanya bilgilerine bu servisten ulaşabilirsin
 #### Başarılı Sorgulama
 
 ```php
-Array
-(
-    [0] => 215 | Adet | Sms Hizmeti - Giden
-)
+array:1 [
+  0 => array:3 [▼
+    "miktar" => "500 "
+    "birim" => " Adet "
+    "paketismi" => " SMS"
+  ]
+]
 
 ```
 
