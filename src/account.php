@@ -92,14 +92,24 @@ class account
 		$result = curl_exec($ch);
         $result=explode("<BR>",$result);
         $res=array();
+       
 		foreach($result as $r=>$v)
         {
           $res[$r]=$v;
           
         }
         
-         $res=array_filter($res);
-
+        $res=array_filter($res);
+        $pkRes=array();
+       
+       
+        foreach($res as $k=>$v){
+            $d=explode('|',$v);
+            $pkRes[$k]['miktar']=$d[0];
+            $pkRes[$k]['birim']=$d[1];
+            $pkRes[$k]['paketismi']=$d[2];
+        }
+        
          if($res[0]==30)
          {
             $response['message']="Geçersiz kullanıcı adı , şifre veya kullanıcınızın API erişim izninin olmadığını gösterir.Ayrıca eğer API erişiminizde IP sınırlaması yaptıysanız ve sınırladığınız ip dışında gönderim sağlıyorsanız 30 hata kodunu alırsınız. API erişim izninizi veya IP sınırlamanızı , web arayüzümüzden; sağ üst köşede bulunan ayarlar> API işlemleri menüsunden kontrol edebilirsiniz.";
@@ -116,7 +126,7 @@ class account
             $response['code']=$res[0];
          }
          else{
-            $response=$res;
+            $response=$pkRes;
          }
          return $response;
     }
