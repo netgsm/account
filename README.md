@@ -3,6 +3,13 @@
 
 Netgsm kredi ve paket sorgulama için kulanılan composer paketidir.
 
+## İçindekiler
+- [İletişim & Destek](#i̇letişim--destek)
+- [Doküman](#doküman)
+- [Supported](#Supported-Laravel-Versions)
+- [Kurulum](#kurulum)
+- [Kredi Sorgulama](#kredi̇-sorgulama)
+- [Paket Sorgulama](#paket-sorgulama)
 # İletişim & Destek
 
  Netgsm API Servisi ile alakalı tüm sorularınızı ve önerilerinizi teknikdestek@netgsm.com.tr adresine iletebilirsiniz.
@@ -17,6 +24,14 @@ https://www.netgsm.com.tr/dokuman/
 ### Supported Laravel Versions
 
 Laravel 6.x, Laravel 7.x, Laravel 8.x, Laravel 9.x, 
+
+### Supported Lumen Versions
+
+Lumen 6.x, Lumen 7.x, Lumen 8.x, Lumen 9.x, 
+
+### Supported Symfony Versions
+
+Symfony 4.x, Symfony 5.x, Symfony 6.x
 
 ### Supported Php Versions
 
@@ -36,7 +51,7 @@ PHP 7.2.5 ve üzeri
 
 Aboneliğinizde bulunan Kredi bilgilerine bu servisten ulaşabilirsiniz.  
 
-```
+```php
         use Netgsm\Account\account;
 	$kredi=new account;
        	$sonuc=$kredi->kredisorgu();
@@ -45,7 +60,7 @@ Aboneliğinizde bulunan Kredi bilgilerine bu servisten ulaşabilirsiniz.
 ``` 
 #### Başarılı Sorgulama
 
-```
+```php
 Array
 (
     [durum] => Başarılı sorgulama
@@ -56,7 +71,7 @@ Array
 ```
 #### Başarısız Sorgulama
 
-```
+```php
 Array
 (
    [durum] => Geçersiz kullanıcı adı , şifre veya kullanıcınızın API erişim izninin olmadığını gösterir.  
@@ -72,7 +87,7 @@ Array
 
 Aboneliğinizde bulunan Paket - Kampanya bilgilerine bu servisten ulaşabilirsiniz.  
 
-```
+```phpphp
         use Netgsm\Account\account;
 	$kredi=new account;
      	$sonuc=$kredi->paketsorgu();
@@ -82,7 +97,7 @@ Aboneliğinizde bulunan Paket - Kampanya bilgilerine bu servisten ulaşabilirsin
 
 #### Başarılı Sorgulama
 
-```
+```php
 Array
 (
     [0] => 215 | Adet | Sms Hizmeti - Giden
@@ -92,7 +107,7 @@ Array
 
 #### Başarısız Sorgulama
 
-```
+```php
 Array
 (
    [durum] => Geçersiz kullanıcı adı , şifre veya kullanıcınızın API erişim izninin olmadığını gösterir.  
